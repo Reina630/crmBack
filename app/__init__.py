@@ -107,7 +107,7 @@ swagger_config = {
 swagger = Swagger(app, config=swagger_config)
 
 # Enregistrement des blueprints
-app.register_blueprint(auth_bp, url_prefix='/auth')
+app.register_blueprint(auth_bp, url_prefix='/api/auth')
 app.register_blueprint(service_bp, url_prefix='/api')
 app.register_blueprint(lead_bp, url_prefix='/api')
 app.register_blueprint(pending_lead_bp, url_prefix='/api')
